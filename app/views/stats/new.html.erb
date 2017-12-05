@@ -1,0 +1,23 @@
+<div class="stats">
+  <h1>Find My Stats!</h1>
+    <div class="links">
+      <%= link_to "Home", root_path %>
+    </div>
+    <%= form_for @stat do |f| %>
+
+    <%= f.label :account_id %>
+    <%= f.text_field :account_id, placeholder: "Account ID", :class => "box" %>
+
+    <%= f.submit "Submit", :class => "button" %>
+
+    <% end %>
+    <p>
+      <em>LIMITATIONS: YOU MUST ENTER A VALID ACCOUNT_ID</em><br>
+      Not sure what your Steam Id is?
+      It's also known as your "friend id",
+      check it out in game when you add friends.<br>
+      Alternatively go look up yourself in <a href="https://www.dotabuff.com">dotabuff</a>.
+      Just look at the URL when you are looking at your profile, the ID is the numbers at the end.<br>
+      Play with the site using some of the pros ids: 86745912, 105248644, 116585378
+    </p>
+</div>

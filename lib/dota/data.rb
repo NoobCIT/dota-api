@@ -26,6 +26,9 @@ module Dota
       JSON.parse response.body
     end
 
+    def name
+      response = HTTParty.get("https://api.opendota.com/api/players/#{@account_id}")
+      JSON.parse response.body
+    end
   end
-
 end

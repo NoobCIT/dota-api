@@ -1,0 +1,45 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/** universal **/
+
+body {
+  font-family: 'Belleza', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-style: italic;
+}
+
+.links a {
+  color: white;
+}
+
+html {
+  background-image: image-url('homepage.jpg') ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /**made background cover entire browser window **/
+}
+
+.homepage-links, .stats {
+  text-align: center;
+  background-color: #8D3020;
+  position: sticky;
+  margin-top: 600px;
+}
+
+.button, .box {
+  color: black;
+}
+
+.alert, .alert-success, .alert-failure {
+  position: absolute;
+  z-index: 1;
+}

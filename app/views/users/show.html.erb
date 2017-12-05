@@ -1,0 +1,17 @@
+<div class="stats">
+  <h1>Player Profile Page </h1>
+  <div class="links">
+    <%= link_to "Home", root_path %>
+  </div>
+  You are logged in as : <%= @user.username %><br>
+  Name: <%= name_for(@user) %><br>
+  Wins: <%= wins_for(@user) %><br>
+  Losses: <%= losses_for(@user) %><br>
+  MMR Estimate: <%= mmr_for(@user) %><br>
+  Hours Played: <%= hours_played_for(@user) %><br>
+
+  Top 3 Played Heroes:<br>
+  <%= image_tag "http://cdn.dota2.com/apps/dota2/images/heroes/#{hero1(@user)}_full.png" %>
+  <%= image_tag "http://cdn.dota2.com/apps/dota2/images/heroes/#{hero2(@user)}_full.png" %>
+  <%= image_tag "http://cdn.dota2.com/apps/dota2/images/heroes/#{hero3(@user)}_full.png" %>
+</div>

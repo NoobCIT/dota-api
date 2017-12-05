@@ -1,0 +1,16 @@
+<div class="homepage-links">
+  <h2>DOTA is Life</h2>
+  <p>Use this site to find out some of your basic DOTA2 stats </p>
+  <div class="links">
+  <% if logged_in? %>
+    You are logged in as: <%= current_user.username %><br>
+    <%= link_to "Profile", current_user %><br>
+    <%= link_to "Logout", logout_path, method: "delete" %><br>
+  <% else %>
+    <%= link_to "Sign Up Now!", signup_path %><br>
+    <%= link_to "Login", login_path %><br>
+    <p>Don't want to sign up?  Follow the link below:</p>
+    <%= link_to "Find My Stats", new_stat_path %>
+  <% end %>
+  </div>
+</div>

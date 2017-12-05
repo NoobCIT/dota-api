@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  record: MyString
+  mmr: 1
+  hero1: MyString
+  hero2: MyString
+  hero3: MyString
+  duration: 1
+
+two:
+  record: MyString
+  mmr: 1
+  hero1: MyString
+  hero2: MyString
+  hero3: MyString
+  duration: 1

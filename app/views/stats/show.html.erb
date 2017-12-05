@@ -1,0 +1,16 @@
+<div class="stats">
+  <h1>Player Statistics </h1>
+  <div class="links">
+    <%= link_to "Home", root_path %>
+  </div>
+  Name: <%= name_for(@stat) %><br>
+  Wins: <%= wins_for(@stat) %><br>
+  Losses: <%= losses_for(@stat) %><br>
+  MMR Estimate: <%= mmr_for(@stat) %><br>
+  Hours Played: <%= hours_played_for(@stat) %><br>
+
+  Top 3 Played Heroes:<br>
+  <%= image_tag "http://cdn.dota2.com/apps/dota2/images/heroes/#{hero1(@stat)}_full.png" %>
+  <%= image_tag "http://cdn.dota2.com/apps/dota2/images/heroes/#{hero2(@stat)}_full.png" %>
+  <%= image_tag "http://cdn.dota2.com/apps/dota2/images/heroes/#{hero3(@stat)}_full.png" %>
+</div>

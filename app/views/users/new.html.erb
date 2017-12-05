@@ -1,0 +1,29 @@
+<div class="stats">
+  <h1>Welcome to the SignupPage! </h1>
+    <div class="links">
+      <%= link_to "Home", root_path %>
+    </div>
+      <em>LIMITATIONS: YOU MUST ENTER A VALID ACCOUNT_ID</em><br>
+
+      <%= form_for @user do |f| %>
+        <%= render 'shared/error_messages' %>
+
+        <%= f.label :account_id %>
+        <%= f.text_field :account_id, placeholder: "Account ID", :class => "box" %>
+
+        <%= f.label :email %>
+        <%= f.email_field :email, :class => "box" %>
+
+        <%= f.label :username %>
+        <%= f.text_field :username, :class => "box" %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password, :class => "box" %>
+
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, :class => "box" %>
+
+        <%= f.submit "Submit", :class => "button" %>
+
+      <% end %>
+</div>

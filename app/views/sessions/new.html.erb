@@ -1,0 +1,17 @@
+<div class="stats">
+  <h1>Login Page</h1>
+  <div class="links">
+    <%= link_to "Home", root_path %>
+  </div>
+  <%= form_for(:session, url: login_path) do |f| %>
+
+    <%= f.label :email %>
+    <%= f.email_field :email, :class => "box" %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password, :class => "box" %>
+
+    <%= f.submit "Login", :class => "button" %>
+
+    <% end %>
+</div>
